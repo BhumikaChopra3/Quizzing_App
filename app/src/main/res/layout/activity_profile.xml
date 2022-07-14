@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:id="@+id/greetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="150dp"/>
+
+    <TextView
+        android:id="@+id/nametitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/greetings"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/profilename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/nametitle"
+        app:layout_constraintLeft_toLeftOf="@id/nametitle"
+        android:layout_marginTop="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/emailtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/profilename"
+        app:layout_constraintLeft_toLeftOf="@id/profilename"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/profilemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/emailtitle"
+        app:layout_constraintLeft_toLeftOf="@id/emailtitle"
+        android:layout_marginTop="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/agetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/profilemail"
+        app:layout_constraintLeft_toLeftOf="@id/profilemail"
+        android:layout_marginTop="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/profileage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/agetitle"
+        app:layout_constraintLeft_toLeftOf="@id/agetitle"
+        android:layout_marginTop="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="logout"
+        android:textStyle="bold"
+        android:backgroundTint="#4169e1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileage"
+        android:layout_marginTop="300dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
